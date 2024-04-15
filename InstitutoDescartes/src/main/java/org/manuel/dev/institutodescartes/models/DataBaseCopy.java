@@ -15,7 +15,7 @@ public class DataBaseCopy implements Server {
     }
 
     @Override
-    public void update(Student student, String update, String id, String name) {
+    public void update(String update, String id, String name) {
         for (Student i: this.students){
             if (update.equals(i.getId())){
                 i.setId(id);
