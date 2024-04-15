@@ -7,42 +7,44 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="566.0" prefWidth="774.0" style="-fx-background-color: salmon;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.manuel.dev.institutodescartes.controllers.AgregarStudentController">
-   <children>
-      <Label layoutX="239.0" layoutY="32.0" text="Agregar Estudiante">
-         <font>
-            <Font size="35.0" />
-         </font>
-      </Label>
-      <Label layoutX="111.0" layoutY="146.0" prefHeight="30.0" prefWidth="94.0" text="Matricula:">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="114.0" layoutY="252.0" prefHeight="30.0" prefWidth="88.0" text="Nombre:">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Button fx:id="guardarBtn" onMouseClicked="#guardarClick" layoutX="526.0" layoutY="297.0" mnemonicParsing="false" text="Guardar">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="volverBtn" onMouseClicked="#volverClick" layoutX="534.0" layoutY="164.0" mnemonicParsing="false" text="Volver">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <TextField fx:id="matriculaTxt" layoutX="111.0" layoutY="186.0">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="nombreTxt" layoutX="114.0" layoutY="319.0">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </TextField>
-   </children>
+<AnchorPane prefHeight="566.0" prefWidth="774.0" style="-fx-background-color: salmon;"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.manuel.dev.institutodescartes.controllers.AgregarStudentController">
+   <Label layoutX="239.0" layoutY="32.0" text="Agregar Estudiante">
+      <font>
+         <Font name="Book Antiqua" size="35.0"/>
+      </font>
+   </Label>
+   <Label layoutX="111.0" layoutY="146.0" prefHeight="30.0" prefWidth="94.0" text="Matricula:">
+      <font>
+         <Font name="Book Antiqua" size="20.0"/>
+      </font>
+   </Label>
+   <Label layoutX="114.0" layoutY="252.0" prefHeight="30.0" prefWidth="88.0" text="Nombre:">
+      <font>
+         <Font name="Book Antiqua" size="20.0"/>
+      </font>
+   </Label>
+   <Button fx:id="guardarBtn" onMouseClicked="#guardarClick" layoutX="526.0" layoutY="297.0" mnemonicParsing="false"
+           text="Guardar">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Button>
+   <Button fx:id="volverBtn" onMouseClicked="#volverClick" layoutX="534.0" layoutY="164.0" mnemonicParsing="false"
+           text="Volver">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="matriculaTxt" layoutX="111.0" layoutY="186.0">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="nombreTxt" layoutX="114.0" layoutY="319.0">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
 </AnchorPane>
