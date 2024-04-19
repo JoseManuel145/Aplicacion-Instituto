@@ -9,12 +9,24 @@ public class Instituto {
         return dataBase;
     }
 
-    public Server getDataBaseCopy() {
-        return dataBaseCopy;
+    public boolean agregarStudent(Student student){
+        boolean exito = false;
+        if (student != null) {
+            dataBase.save(student);
+            dataBaseCopy.save(student);
+            dataBaseCopy2.save(student);
+            exito = true;
+        }
+        return exito;
     }
-
-    public Server getDataBaseCopy2() {
-        return dataBaseCopy2;
+    public boolean actualizarStudent(String editar,String id,String name){
+        boolean exito = false;
+        if (editar != null){
+            dataBase.update(editar,id,name);
+            dataBaseCopy.update(editar,id,name);
+            dataBaseCopy2.update(editar,id,name);
+            exito = true;
+        }
+        return exito;
     }
-
 }

@@ -8,31 +8,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="566.0" prefWidth="774.0" style="-fx-background-color: salmon;"
-            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.manuel.dev.institutodescartes.controllers.MenuPrincipalController">
-   <Button fx:id="editarBtn" onMouseClicked="#editarClick" layoutX="462.0" layoutY="423.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="174.0"
-           text="Editar Estudiante"/>
+<AnchorPane prefHeight="566.0" prefWidth="774.0" style="-fx-background-color: salmon;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.manuel.dev.institutodescartes.controllers.MenuPrincipalController">
+   <Button fx:id="editarBtn" layoutX="462.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#editarClick" prefHeight="63.0" prefWidth="174.0" style="-fx-background-color: #34495E; -fx-border-color: gold; -fx-border-width: 3px; -fx-background-radius: 12px; -fx-border-radius: 10px;" text="Editar Estudiante" textFill="WHITE" />
    <ImageView fitHeight="172.0" fitWidth="159.0" layoutX="85.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@image/Escudo-Uni.png"/>
+      <Image url="@image/Escudo-Uni.png" />
    </ImageView>
-   <ListView fx:id="tabla" layoutX="390.0" layoutY="142.0" prefHeight="200.0" prefWidth="320.0"
-             style="-fx-border-color: gold; -fx-border-width: 5px;"/>
+   <ListView fx:id="tabla" layoutX="390.0" layoutY="142.0" prefHeight="222.0" prefWidth="320.0" style="-fx-border-color: gold; -fx-border-width: 5px;" />
    <Label layoutX="479.0" layoutY="99.0" text="ESTUDIANTES">
       <font>
-         <Font name="Book Antiqua" size="20.0"/>
+         <Font name="Book Antiqua" size="20.0" />
       </font>
    </Label>
    <Label layoutX="36.0" layoutY="265.0" text="INSTITUTO DESCARTES">
       <font>
-         <Font name="Book Antiqua" size="20.0"/>
+         <Font name="Book Antiqua" size="20.0" />
       </font>
    </Label>
-   <Button fx:id="agregarBtn" onMouseClicked="#agregarClick" layoutX="151.0" layoutY="423.0" mnemonicParsing="false"
-           prefHeight="63.0" prefWidth="174.0" text="Agregar Estudiante"/>
+   <Button fx:id="agregarBtn" layoutX="151.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#agregarClick" prefHeight="63.0" prefWidth="174.0" style="-fx-background-color: #34495E; -fx-border-color: gold; -fx-border-width: 3px; -fx-background-radius: 12px; -fx-border-radius: 10px;" text="Agregar Estudiante" textFill="WHITE" />
    <Label layoutX="153.0" layoutY="22.0" text="BIENVENIDO A DESCARTES" underline="true">
       <font>
-         <Font name="Book Antiqua" size="35.0"/>
+         <Font name="Book Antiqua" size="35.0" />
       </font>
    </Label>
 </AnchorPane>

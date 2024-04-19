@@ -1,7 +1,5 @@
 package org.manuel.dev.institutodescartes.models;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 public class Student {
     private String id;
@@ -28,16 +26,13 @@ public class Student {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
-    public static ObservableList<Student> getStudents() {
-        ObservableList<Student> students = FXCollections.observableArrayList();
-        // Agrega estudiantes a la lista
-        return students;
+
+    public String imprimirAlumn() {
+        StringBuilder alumno = new StringBuilder();
+        alumno.append("---------------\n");
+        alumno.append("Matricula: ").append(id).append("\n");
+        alumno.append("Nombre: ").append(name).append("\n");
+        alumno.append("---------------").append("\n");
+        return alumno.toString();
     }
 }

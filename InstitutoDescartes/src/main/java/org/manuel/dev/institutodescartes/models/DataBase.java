@@ -3,7 +3,7 @@ package org.manuel.dev.institutodescartes.models;
 import java.util.ArrayList;
 
 public class DataBase implements Server {
-    private ArrayList <Student> students = new ArrayList<>();
+    private final ArrayList <Student> students = new ArrayList<>();
 
     public ArrayList<Student> getStudents() {
         return students;
@@ -11,7 +11,7 @@ public class DataBase implements Server {
 
     @Override
     public void save(Student student) {
-        this.students.add(student);
+        students.add(student);
     }
 
     @Override

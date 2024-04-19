@@ -23,7 +23,7 @@ public class MenuPrincipalController {
         tabla.getItems().clear();
 
         for (Student i: db.getStudents()){
-            tabla.getItems().add(i.toString());
+            tabla.getItems().add(i.imprimirAlumn());
         }
     }
     @FXML

@@ -6,42 +6,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="566.0" prefWidth="774.0" style="-fx-background-color: salmon;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.manuel.dev.institutodescartes.controllers.EditarStudentController">
-   <children>
-      <Label layoutX="332.0" layoutY="23.0" text="EDITAR ESTUDIANTE">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <Button fx:id="guardarBtn" layoutX="502.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#guardarClick" prefHeight="46.0" prefWidth="118.0" text="Guardar Cambios" />
-      <TextField fx:id="matriculaTxt" layoutX="187.0" layoutY="276.0" />
-      <Label layoutX="189.0" layoutY="244.0" text="Matricula:">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="189.0" layoutY="330.0" text="Nombre:">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="224.0" layoutY="87.0" text="Ingresa Matricula o Nombre:">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <TextField fx:id="nombreTxt" layoutX="186.0" layoutY="372.0" />
-      <TextField fx:id="update" layoutX="260.0" layoutY="131.0">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </TextField>
-      <Label layoutX="216.0" layoutY="190.0" text="Nuevos Datos:">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Button fx:id="volverBtn" layoutX="518.0" layoutY="367.0" mnemonicParsing="false" onMouseClicked="#volverClick" prefHeight="36.0" prefWidth="86.0" text="VOlver" />
-   </children>
+   <Label alignment="CENTER" layoutX="253.0" layoutY="20.0" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #34495E; -fx-border-color: gold; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 15px;" text=" EDITAR ESTUDIANTE " textFill="WHITE">
+      <font>
+         <Font name="Book Antiqua" size="25.0" />
+      </font>
+   </Label>
+   <Button fx:id="guardarBtn" layoutX="413.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#guardarClick" prefHeight="63.0" prefWidth="174.0" style="-fx-background-color: #34495E; -fx-background-radius: 15px;            -fx-border-color: gold; -fx-border-width: 2px; -fx-border-radius: 12px;" text="Guardar Cambios" textFill="WHITE" />
+   <TextField fx:id="matriculaTxt" layoutX="187.0" layoutY="276.0" />
+   <Label layoutX="189.0" layoutY="244.0" text="Matricula:">
+      <font>
+         <Font name="Book Antiqua" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="189.0" layoutY="330.0" text="Nombre:">
+      <font>
+         <Font name="Book Antiqua" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="224.0" layoutY="87.0" text="Ingresa Matricula o Nombre:">
+      <font>
+         <Font name="Book Antiqua" size="20.0" />
+      </font>
+   </Label>
+   <TextField fx:id="nombreTxt" layoutX="186.0" layoutY="372.0" />
+   <TextField fx:id="update" layoutX="260.0" layoutY="131.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </TextField>
+   <Label layoutX="216.0" layoutY="190.0" text="Nuevos Datos:">
+      <font>
+         <Font name="Book Antiqua" size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="volverBtn" layoutX="552.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#volverClick" prefHeight="63.0" prefWidth="174.0" style="-fx-background-color: #34495E; -fx-background-radius: 15px; -fx-border-color: gold; -fx-border-width: 2px; -fx-border-radius: 12px;" text="Volver" textFill="WHITE" />
 </AnchorPane>
